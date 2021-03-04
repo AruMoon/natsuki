@@ -5,6 +5,10 @@
     "windows",
     "osx"
   ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ]
   "dist": "xenial",
   "go": [
     "1.16"
