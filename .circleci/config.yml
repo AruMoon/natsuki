@@ -44,5 +44,5 @@ workflows:
   build:
     jobs:
       - build_linux
-      - build_windows
+      #- build_windows
       - build_docker
