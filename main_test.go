@@ -27,13 +27,13 @@ import (
 	"os"
 	"testing"
 
-	. "github.com/bwmarrin/discordgo"
+	. "github.com/bwmarrin/discordgo" // Calling discordgo without qualifiaction
 )
 
 var cl *Session
 
 func TestMain(t *testing.T) {
-	cl := Run(os.Getenv("NATSUKI_TOKEN"))
+	cl := Run(os.Getenv("NATSUKI_TOKEN")) // os.Getenv("NATSUKI_TOKEN") can be replaced to your own method to authorize, it should be string
 	log.Printf("Authorized as %v#%v", cl.State.User.Username, cl.State.User.Discriminator)
 
 	HandleError(cl.Close())
