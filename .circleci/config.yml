@@ -13,6 +13,7 @@ jobs:
       image: ubuntu-2004:202101-01
     steps:
       - checkout
+      - run: go version
       - run: go get -v -t -d ./...
       - run: go test -v ./...
   build_windows:
@@ -22,6 +23,7 @@ jobs:
     steps:
       - checkout
       - run: systeminfo
+      - run: go version
       - run: go get -v -t -d ./...
       - run: go test -v ./...
   build_docker:
@@ -30,6 +32,7 @@ jobs:
     working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
     steps:
       - checkout
+      - run: go version
       - run: go get -v -t -d ./...
       - run: go test -v ./...
     
