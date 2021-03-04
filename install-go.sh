@@ -4,3 +4,6 @@ tar -zxvf go$GOVERSION.linux-amd64.tar.gz
 export GOPATH=$HOME/project/go
 export GOROOT=$GOPATH/bin
 export PATH=$GOROOT:$PATH
+echo $PATH
+echo $GOPATH
+echo $GOROOT
