@@ -8,8 +8,5 @@ jobs:
   - os: linux
   - os: linux
     arch: arm64
-  - os: linux
-    arch: arm64-graviton2
-    virt: lxd
   - os: windows
   - os: osx
