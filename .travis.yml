@@ -1,0 +1,12 @@
+{
+  "language": "go",
+  "os": [
+    "linux",
+    "windows",
+    "osx"
+  ],
+  "dist": "xenial",
+  "go": [
+    "1.16"
+  ]
+}
