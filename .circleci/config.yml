@@ -13,7 +13,7 @@ jobs:
       image: ubuntu-2004:202101-01
     steps:
       - checkout
-      - run: ./install-go.sh
+      - run: source ./install-go.sh
       - run: go version
       - run: go get -v -t -d ./...
       - run: go test -v ./...
