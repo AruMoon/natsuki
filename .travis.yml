@@ -6,9 +6,10 @@ go:
 jobs:
  include:
   - os: linux
-    dist: xenial
   - os: linux
-    dist: xenial
     arch: arm64
+  - os: linux
+    arch: arm64-graviton2
+    virt: lxd
   - os: windows
   - os: osx
