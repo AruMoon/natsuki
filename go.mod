@@ -1,4 +1,4 @@
-module github.com/AruMoon/natsuki-core
+module github.com/AruMoon/natsuki
 
 go 1.16
 
