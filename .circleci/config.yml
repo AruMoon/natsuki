@@ -11,7 +11,6 @@ jobs:
   build_linux:
     machine:
       image: ubuntu-2004:202101-01
-    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
     steps:
       - checkout
       - run: go get -v -t -d ./...
@@ -20,7 +19,6 @@ jobs:
     executor:
       name: win/default
       shell: powershell.exe
-    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
     steps:
       - checkout
       - run: systeminfo
@@ -42,3 +40,4 @@ workflows:
     jobs:
       - build_linux
       - build_windows
+      - build_docker
