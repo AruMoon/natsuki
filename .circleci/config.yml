@@ -13,10 +13,9 @@ jobs:
       image: ubuntu-2004:202101-01
     steps:
       - checkout
-      - run: ./install-go.sh
-      - run: PATH=$HOME/go/bin:$PATH go version
-      - run: PATH=$HOME/go/bin:$PATH go get -v -t -d ./...
-      - run: PATH=$HOME/go/bin:$PATH go test -v ./...
+      - run: go version
+      - run: go get -v -t -d ./...
+      - run: go test -v ./...
   build_windows:
     executor:
       name: win/default
