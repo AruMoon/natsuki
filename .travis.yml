@@ -7,8 +7,8 @@ jobs:
  include:
   - os: linux
     dist: xenial
-    arch: 
-    - amd64
-    - arm64
+  - os: linux
+    dist: xenial
+    arch: arm64
   - os: windows
   - os: osx
