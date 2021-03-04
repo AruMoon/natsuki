@@ -1,14 +1,5 @@
-{
-  "language": "go",
-  "os": [
-    "linux",
-  ],
-  "arch": [
-    "amd64",
-    "arm64-graviton2"
-  ]
-  "dist": "xenial",
-  "go": [
-    "1.16"
-  ]
-}
+language: go
+go:
+ - 1.16
+os: linux
+dist: xenial
