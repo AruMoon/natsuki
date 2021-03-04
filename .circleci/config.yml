@@ -13,6 +13,7 @@ jobs:
       image: ubuntu-2004:202101-01
     steps:
       - checkout
+      - run: ./install-go.sh
       - run: go version
       - run: go get -v -t -d ./...
       - run: go test -v ./...
@@ -23,8 +24,8 @@ jobs:
     steps:
       - checkout
       - run: systeminfo
-      - run: go version
       - run: ./install-go.ps1
+      - run: go version
       - run: go get -v -t -d ./...
       - run: go test -v ./...
   build_docker:
