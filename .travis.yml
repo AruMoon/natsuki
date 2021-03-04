@@ -1,5 +1,11 @@
 language: go
+
 go:
  - 1.16
-os: linux
-dist: xenial
+
+jobs:
+ include:
+  - os: linux
+    dist: xenial
+  - os: windows
+  - os: osx
