@@ -23,7 +23,6 @@ Copyright 2021 Aru Moon (Anton Gubin)
 package natsuki
 
 import (
-	"log"
 	"os"
 	"testing"
 
@@ -34,8 +33,7 @@ var cl *Session
 
 func TestMain(t *testing.T) {
 	cl := Run(os.Getenv("NATSUKI_TOKEN")) // os.Getenv("NATSUKI_TOKEN") can be replaced to your own method to authorize, it should be string
-	log.Printf("Authorized as %v#%v", cl.State.User.Username, cl.State.User.Discriminator)
 
-	HandleError(cl.Close())
+	cl.Close()
 	return
 }
