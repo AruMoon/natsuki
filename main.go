@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/bwmarrin/discordgo"
+	. "github.com/bwmarrin/discordgo"
 )
 
-func Run(token string) *discordgo.Session {
-	client, err := discordgo.New(token)
+func Run(token string) Session {
+	client, err := New(token)
 
 	HandleError(err)
 
