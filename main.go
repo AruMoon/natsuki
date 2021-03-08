@@ -14,7 +14,7 @@ Copyright 2021 Aru Moon
    limitations under the License.
 */
 
-package natsuki
+package core
 
 import (
 	"fmt"
@@ -23,7 +23,7 @@ import (
 	. "github.com/bwmarrin/discordgo"
 )
 
-func Run(token string) Session {
+func Run(token string) *Session {
 	client, err := New(token)
 
 	HandleError(err)
